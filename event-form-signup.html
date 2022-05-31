@@ -1,0 +1,64 @@
+<style type="text/css">.formbox { clear: both; position: relative; margin: 0px auto; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; padding: 0px 15px;}
+.formbox .formrow { margin-top: 20px; }
+.formbox .formrow_half { float: left; width: 48%; }
+.formrow .formrow_half:nth-of-type(2) { float: right; }
+.formbox label { display: block; clear: both; margin-bottom: 4px; color: #333333; }
+.formbox input[type="text"] { padding: 6px; font-size: 1em; color: #000000; border: 1px solid #CCCCCC; width: 100%; box-sizing: border-box; }
+.formbox select { padding: 6px; font-size: 1em; }
+.formbox input[type="submit"] { clear: both; border-radius: 3px; border-color: #000000; background: #FFB81C none repeat scroll 0% 0%; color: #000000; font-size: 1em; padding: 8px 20px; }
+@media screen and (max-width: 730px) {
+ .formbox .form_half { float: none; width: 100%; }
+ .formrow .form_half:nth-of-type(2) { margin-top: 20px; }
+}
+
+}
+</style>
+<form action="https://cloud.e.blackhawks.com/submit" class="formbox" method="post"><input name="source" type="hidden" value="Summer 2022 Event Signup - DO Division" /> <input name="thanks" type="hidden" value="https://nhlblackhawks.github.io/Email-Forms/success-page.html" />
+<div class="formrow">
+	<label><b>Email</b><span style="color:#f00;">*</span></label> <input name="email" required="" type="text" />
+</div>
+<div class="formrow">
+	<div class="formrow_half">
+		<label><b>First Name</b></label> <input name="firstname" type="text" required=""/>
+	</div>
+	<div class="formrow_half">
+		<label><b>Last Name</b> </label> <input name="lastname" type="text" required=""/>
+	</div>
+    	<div style="clear:both;">
+        &nbsp;
+    </div>
+</div>
+<div class="formrow">
+	<label><b>Birthday</b> </label> <input name="birthday" type="date" required="" />
+</div>
+<div class="formrow">
+	<label><b>Zip Code</b> </label> <input name="zip" type="text" required=""/>
+</div>
+
+<div class="formrow">
+	<label><b>What event are you at?</b> </label> <!-- <input name="source" type="text" required=""/> -->
+	<select name="source" required="">
+	  <option value="Summer 2022 Event Signup - Do Division">Do Division</option>
+	  <option value="Summer 2022 Event Signup - Hyde Park Summer Fest">Hyde Park Summer Fest</option>
+	  <option value="Summer 2022 Event Signup - Taste of Randolph">Taste of Randolph</option>
+	  <option value="Summer 2022 Event Signup - Pride in the Park">Pride in the Park</option>
+	  <option value="Summer 2022 Event Signup - Other Event">Other</option>
+	</select>
+</div>
+
+<div class="formrow">
+	<input name="Blackhawks Tickets" type="checkbox" value="TRUE" type="hidden" />
+	<input name="Blackhawks Store" type="checkbox" value="TRUE" type="hidden" />
+	<input name="Blackhawks News" type="checkbox" value="TRUE" type="hidden" />
+</div>
+<div class="formrow">
+	<input name="optin" required="" type="checkbox" value="1" /><i><span style="font-size: 12px; line-height:14px; padding: 0px 0px 0px 10px;">I have read and agree to the Chicago Blackhawks <a href="https://www.nhl.com/blackhawks/info/privacy-policy" target="_blank">Privacy Policy</a>. I agree to receive news, updates, and other information via email from the Chicago Blackhawks.<span style="color:#f00; font-size: 16px;">*</span></span></i>
+</div>
+
+<div class="formrow">
+	<span class="req">*</span> <i>- required field</i>
+</div>
+<div class="formrow">
+	<center><button name="subscribe" style="padding:10px 30px; background-color: #ea0029; color: #ffffff;" type="submit" value="1">Subscribe</button></center>
+</div>
+</form>
